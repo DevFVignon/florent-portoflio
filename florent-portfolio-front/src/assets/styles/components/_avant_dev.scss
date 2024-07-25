@@ -1,0 +1,25 @@
+.avant_dev{
+    background-color: rgb(244, 224, 224, 0.6);
+    .avant_dev-photo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap:20px;
+        >div{
+            padding:20px 20px;
+            margin:auto;
+            @include tablet-responsive{
+                width:30%;
+            }
+            >img{
+                width:100%;
+                height: auto;
+                object-fit: cover;
+                aspect-ratio: auto;
+            }
+        }  
+    }
+    >p>span{
+        font-weight: 550;
+    }
+}

@@ -1,0 +1,19 @@
+.competences{
+   display: flex;
+   flex-direction: column;
+   gap: 15px; 
+   background: #eaeaea;
+    .competences_bloc{
+        >img{
+            object-fit: contain;
+            margin-bottom: 15px;
+            width:25%;
+            @include desktop-responsive{
+                max-height:150px;
+            }
+        }
+        >p{
+            color: rgb(131, 124, 124);
+        };
+    }
+}

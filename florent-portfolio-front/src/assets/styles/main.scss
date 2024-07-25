@@ -1,0 +1,19 @@
+/* main.scss */
+@import 'base/reset';
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'base/typography';
+@import 'layout/app';
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/footer';
+//@import 'layout/grid';
+//@import 'components/button';
+//@import 'components/card';
+@import 'components/competences';
+@import 'components/projects';
+@import 'components/about';
+@import 'components/presentation';
+@import 'components/avant_dev';
+
+

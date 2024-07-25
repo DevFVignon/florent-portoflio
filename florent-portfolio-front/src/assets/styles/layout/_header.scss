@@ -1,0 +1,32 @@
+.header{
+    width:100%;
+    background: url(../../images/computer_background.webp)  no-repeat center center;
+    background-size: cover;
+    opacity: 0.75;
+    position: relative;
+    height: 100vh;
+    width:auto;
+    // @include tablet-responsive{
+    //     background: url(../../images/computer_background.webp) no-repeat center center;
+    //     background-size: cover;
+    // }
+
+    ::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.05); 
+        z-index: -1; 
+    }
+
+    .header-content{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    top: 45%;
+    }
+}   

@@ -1,0 +1,76 @@
+/* _mixins.scss */
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin image_100_cover{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+@mixin form{
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        align-items: flex-start;
+    }
+
+    label{
+        display: block;
+        margin-bottom:10px;
+    }
+    input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        height: 2.5em;
+        margin-bottom: 20px;
+        box-shadow: 3px 5px 15px 0 rgba(155, 161, 173, 0.6);
+        font-size:0.9em;
+        padding-left: 10px;
+    }
+    textarea {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        height: 5em;
+        line-height: 2.5em;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+        box-shadow: 3px 5px 15px 0 rgba(155, 161, 173, 0.6);
+        padding-left: 10px;
+    }
+    input[type="submit"], button {
+        background-color: #9ab5e0;
+        padding: .5em 1em
+    }
+    button{
+        font-size: 0.8em;
+        border: none;
+    }
+}
+  
+@mixin tablet-responsive {
+@media (min-width: $breakpoint-tablet-min) { 
+    @content;
+}
+}
+
+@mixin desktop-responsive {
+@media (min-width: $breakpoint-desktop) {
+    @include tablet-responsive;
+    @content;
+}
+}
+
+@mixin large-desktop-responsive {
+@media (min-width: $breakpoint-large-desktop) {
+    @include desktop-responsive; 
+    @content;  
+}
+}

@@ -1,0 +1,32 @@
+.app{
+    display: flex;
+    flex-direction: column;
+
+    > * {
+        padding : 25px;
+    }   
+}
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $font-stack;
+  }
+
+.app section{
+    padding: 90px 25px;
+}  
+  
+img{
+    @include image_100_cover;
+    aspect-ratio: 1 / 0.75; 
+}
+
+form{
+    @include form;
+}
+
+a{
+    color:black;
+}
